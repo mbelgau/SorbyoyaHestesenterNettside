@@ -1,0 +1,57 @@
+body {
+    margin: 0; 
+    padding: 0;
+}
+
+div.page {
+    height: 100vh;
+    display: grid; 
+    grid-template-rows: 100px 30px 100fr 30px;
+    grid-template-areas: 'header'
+                         'menu'
+                         'mainContent'
+                         'footer';
+}
+
+div.Header {
+    background-color: rgb(0, 0, 0); 
+    color: rgb(255, 255, 255);
+
+}
+
+div.Menu {
+    position: sticky;
+    background-color: rgb(75, 75, 75);
+    grid-area: menu; 
+
+}
+
+.menu1 {
+    background-color: rgb(75, 75, 75);
+    color: rgb(255, 255, 255);
+    width: 25%;
+    float: right;
+}
+
+
+div.MainContent {
+    background-color: rgb(255, 255, 255);
+    grid-area: MainContent; 
+}
+
+.mainContant1 {
+    background-color: rgb(75, 75, 75); 
+}
+
+div.footer {
+    background-color: rgb(0, 0, 0); 
+    color: rgb(255, 255, 255);
+    grid-area: footer; 
+}
+
+.footer1 {
+    background-color: rgb(0, 0, 0); 
+    color: rgb(255, 255, 255);
+    width: 25%;
+    float: right;
+}
